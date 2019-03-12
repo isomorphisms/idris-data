@@ -1,0 +1,72 @@
+
+What are these languages like?
+
+
+Haskell is lazy, first of all. Meaning that a <list could be thought of, scheme-ish-ly, as
+
+(a (b (c (d (e (f (...   )...))))))
+
+
+and then operations like (tail -1) <list    be expressed as
+
+reverse_list
+then
+take first element of list
+then
+unreverse
+
+
+
+and tail -3 <list   might be seen as
+
+
+reverse_list
+then
+take first element of list
+then
+take first element of remaining list
+then
+take first element of remaining list
+then
+unreverse
+
+
+
+--- i.e., building up a long list of text commands, which are then cancelled by the compiler before actually executed.
+
+
+
+In theory this might result in less work. In practice? Who knows.
+
+
+
+Type safety is touted as a plus. I'm not really sure, hence this little excursion.
+
+
+
+
+=========
+
+
+
+Idris is based on the observation that some types change in predictably computable ways. Therefore the types themselves should be first-class computable.
+
+
+
+For example inner product of matrices  (A x z) inner (z x B)  results in an (A x B) matrix, and if z != z, the inner product can't be done.
+
+
+
+
+
+
+
+
+
+Here again type safety is wanted, with additional flexibility to let the programmer write the types.
+
+
+
+==========
+
+
