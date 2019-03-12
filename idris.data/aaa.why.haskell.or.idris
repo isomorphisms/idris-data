@@ -35,6 +35,9 @@ unreverse
 --- i.e., building up a long list of text commands, which are then cancelled by the compiler before actually executed.
 
 
+For one thing, this makes folds common. For another, (controversial) lenses were invented because foldl' foldr2' was impractical. Zip, map, and fmap are also probably so common, because we're working so much with "pre-compiler" lazy text.
+
+
 
 In theory this might result in less work. In practice? Who knows.
 
