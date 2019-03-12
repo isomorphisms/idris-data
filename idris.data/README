@@ -1,0 +1,24 @@
+
+using idris | haskell to do things I would normally do from bash.
+
+is it better?
+
+maybe (co)monads will be easier with practical examples.
+
+
+
+
+
+
+.hs files use main :: IO()
+
+in .idr this would be main : IO ()
+
+
+
+Idris is still a cabal-install from haskell, so `:set syntax=haskell` will look OK for .idr (in vim).
+
+
+
+
+I have The Glorious Glasgow Haskell Compilation System, version 8.4.3 and idris --version 1.3.1.
