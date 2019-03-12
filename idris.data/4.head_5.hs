@@ -2,7 +2,7 @@ main :: IO ()
 main = do
   ear <- getLine
   let rational_brain = lines ear
-  print $ unlines $ take 5 $ rational_brain
+  print $ take 5 $ rational_brain
 
 
 -- `lines` turns "string\nstrang\nstrung"
