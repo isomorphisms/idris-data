@@ -1,0 +1,13 @@
+
+what does <- do?
+
+- real world haskell pp 72, 167, 344
+
+
+: builds lists
+
+['a','b','c']:'d' fails
+'a':['b','c','d'] == "abcd"       -- oh yeah, strings vs [Char]
+
+
+['l','i','s','t']

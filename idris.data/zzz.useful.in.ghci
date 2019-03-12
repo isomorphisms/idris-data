@@ -1,0 +1,6 @@
+
+Type some of these into ghci.
+
+lines "string\nstrang\nstrung"
+unlines $ lines "string\nstrang\nstrung"
+:t lines

@@ -1,0 +1,13 @@
+hoogle is haskell's ri | perldoc | ??function  (the last in R).
+
+It's not as good because you can't see comments or function body, but it does tell you where the function or whatever lives.
+
+
+getArgs
+readLine
+getChar
+lines
+putChar
+putStrLn
+show
+print
