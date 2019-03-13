@@ -1,0 +1,47 @@
+regina@scheherezade:~/idris.learn/idris.data$ time !!
+time <../amzn 6.tail_5
+2018-02-07 19:59:27.918908155,1414.44,8,Q,,,@ TI, ,N,,,,NYSE_TAQ::AMZN
+2018-02-07 19:59:43.270991128,1414.00,66,Q,,,@FTI, ,N,,,,NYSE_TAQ::AMZN
+2018-02-07 19:59:43.270994987,1414.00,1,Q,,,@FTI, ,N,,,,NYSE_TAQ::AMZN
+2018-02-07 19:59:43.565503341,1414.00,20,D,,,@ TI,Q,N,,,,NYSE_TAQ::AMZN
+2018-02-07 19:59:59.789077821,1416.00,10,D,,,@ TI,Q,N,,,,NYSE_TAQ::AMZN
+
+
+real    0m1.434s
+user    0m1.356s
+sys     0m0.071s
+regina@scheherezade:~/idris.learn/idris.data$ time <../amzn tail -5
+2018-02-07 19:59:27.918908155,1414.44,8,Q,,,@ TI, ,N,,,,NYSE_TAQ::AMZN
+2018-02-07 19:59:43.270991128,1414.00,66,Q,,,@FTI, ,N,,,,NYSE_TAQ::AMZN
+2018-02-07 19:59:43.270994987,1414.00,1,Q,,,@FTI, ,N,,,,NYSE_TAQ::AMZN
+2018-02-07 19:59:43.565503341,1414.00,20,D,,,@ TI,Q,N,,,,NYSE_TAQ::AMZN
+2018-02-07 19:59:59.789077821,1416.00,10,D,,,@ TI,Q,N,,,,NYSE_TAQ::AMZN
+
+real    0m0.003s
+user    0m0.001s
+sys     0m0.002s
+regina@scheherezade:~/idris.learn/idris.data$ man ghc
+regina@scheherezade:~/idris.learn/idris.data$ ghc -Odph 6.tail_5.hs
+[1 of 1] Compiling Main             ( 6.tail_5.hs, 6.tail_5.o ) [Optimisation flags changed]
+Linking 6.tail_5 ...
+regina@scheherezade:~/idris.learn/idris.data$ time <../amzn tail -5
+2018-02-07 19:59:27.918908155,1414.44,8,Q,,,@ TI, ,N,,,,NYSE_TAQ::AMZN
+2018-02-07 19:59:43.270991128,1414.00,66,Q,,,@FTI, ,N,,,,NYSE_TAQ::AMZN
+2018-02-07 19:59:43.270994987,1414.00,1,Q,,,@FTI, ,N,,,,NYSE_TAQ::AMZN
+2018-02-07 19:59:43.565503341,1414.00,20,D,,,@ TI,Q,N,,,,NYSE_TAQ::AMZN
+2018-02-07 19:59:59.789077821,1416.00,10,D,,,@ TI,Q,N,,,,NYSE_TAQ::AMZN
+
+real    0m0.003s
+user    0m0.000s
+sys     0m0.003s
+regina@scheherezade:~/idris.learn/idris.data$ time <../amzn 6.tail_5
+2018-02-07 19:59:27.918908155,1414.44,8,Q,,,@ TI, ,N,,,,NYSE_TAQ::AMZN
+2018-02-07 19:59:43.270991128,1414.00,66,Q,,,@FTI, ,N,,,,NYSE_TAQ::AMZN
+2018-02-07 19:59:43.270994987,1414.00,1,Q,,,@FTI, ,N,,,,NYSE_TAQ::AMZN
+2018-02-07 19:59:43.565503341,1414.00,20,D,,,@ TI,Q,N,,,,NYSE_TAQ::AMZN
+2018-02-07 19:59:59.789077821,1416.00,10,D,,,@ TI,Q,N,,,,NYSE_TAQ::AMZN
+
+
+real    0m1.432s
+user    0m1.361s
+sys     0m0.066s
