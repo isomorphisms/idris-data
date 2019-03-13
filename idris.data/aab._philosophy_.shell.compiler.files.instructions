@@ -1,0 +1,21 @@
+
+My general philosophy in this is that the programmer will be adapting to whatever you teach her to use. Depending on her breadth of knowledge she may choose to
+
+1) only use pre-made tools
+2) happily edit program instructions (e.g., look at how `cut` works and write a ruby `cut` then modify it)
+3) happily edit the language design   (this is the ANTLR/lex+yacc/perl 6 grammars way)
+
+
+
+The Go and C philosophies are to stick at 2.   Perl 6 wants to get closer to 3.
+
+
+
+
+Bash scripting is about staying at 1. Meaning, I would write `(head -12345 | tail -5) <file` to get the 12340th through 12345th lines, even though bash doesn't optimise this at all: it literally tells the operating system to write 12345 lines to the pipe buffer, which gets to be problematic if you have e.g. 100,000,000 line files to `head` through, let alone `shuf`fle.
+
+Yet we shouldn't forget 1 just as soon as we learn to write custom programs (i.e., different from /usr/local/bin, /usr/bin, /bin, and /sbin). For one thing, the UNIX philosophy has been successful at reducing debugging times and errors. For two, approach 1 is the quickest to learn and to implement. If someone has to CHECK or UNDERSTAND my program that improves on `(head -12345 | tail -5)` in terms of memory management, speed, optimisations for a particular system, whatever, faster compute runs might be worse in the large.
+
+
+
+Haskell's and Idris' design choices fit into the 1-2-3 world of implementers' real options as well.     Yes, it's true that matrix-inner-product types have this or that characteristic.  So?
