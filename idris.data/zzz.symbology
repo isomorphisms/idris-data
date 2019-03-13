@@ -11,3 +11,5 @@ what does <- do?
 
 
 ['l','i','s','t']
+
+list !! 3 selects the 3rd element of list     (book.realworldhaskell.org p 196)
