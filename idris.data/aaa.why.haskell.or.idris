@@ -58,6 +58,8 @@ Idris is based on the observation that some types change in predictably computab
 
 For example inner product of matrices  (A x z) inner (z x B)  results in an (A x B) matrix, and if z != z, the inner product can't be done.
 
+Even simpler, shouldn’t I be able to allocate memory for an array of length ${whatever i want}, where the $ signifies a variable? That seems reasonable. The importance of doing this with types, though, could be challenged.
+
 
 
 
