@@ -60,6 +60,8 @@ For example inner product of matrices  (A x z) inner (z x B)  results in an (A x
 
 Even simpler, shouldn’t I be able to allocate memory for an array of length ${whatever i want}, where the $ signifies a variable? That seems reasonable. The importance of doing this with types, though, could be challenged.
 
+Go (sans comonads) solves the problem of dynamically sized arrays with the slice. (see tour of go)
+
 
 
 
