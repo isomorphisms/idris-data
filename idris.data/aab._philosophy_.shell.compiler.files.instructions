@@ -4,6 +4,7 @@ My general philosophy in this is that the programmer will be adapting to whateve
 1) only use pre-made tools
 2) happily edit program instructions (e.g., look at how `cut` works and write a ruby `cut` then modify it)
 3) happily edit the language design   (this is the ANTLR/lex+yacc/perl 6 grammars way)
+*) †
 
 
 
@@ -19,3 +20,8 @@ Yet we shouldn't forget 1 just as soon as we learn to write custom programs (i.e
 
 
 Haskell's and Idris' design choices fit into the 1-2-3 world of implementers' real options as well.     Yes, it's true that matrix-inner-product types have this or that characteristic.  So?
+
+
+
+
+† I haven’t counted (4) the willingness to use IDE's, vim, or scripting tools to generate other code   [markdown is an example, it generates html]         (5) to make DSL's   [cucumber]      (6) to learn really big libraries   [rails]
