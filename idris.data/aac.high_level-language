@@ -1,0 +1,64 @@
+
+What's the difference between a "high-level language" like Haskell and a high-level library like Rails, and the mythical LISP hacker who builds his own high-level thing?
+
+
+A "powerful" control stick must, by definition, do many things with a small button press. Here is a tiny sequence of bash functions I wrote which demonstrates the point.
+
+Date() { "+ $*     %H:%M:%S   (%b %d)" }
+alias T='tee -a'
+
+alias D='Date'
+
+x() { D started coding again. | T billing }
+y() { D leaving the computer. | T billing }
+
+
+
+Now I have reduced these timekeeping functions to 2 key presses each. If I wanted to extend the "library" further I could add je() { D bill this time to client j.e. | T billing } or jef() { D client j.e. wants me to take approach f. | T billing }.
+
+
+
+
+Using Haskell's >>=, >>>, and so on is thus a bid for the primitives in the GHC compiler: that these are well-designed and you will use them often.
+
+
+
+
+Try to read the Rails source code: it uses too many language hacks and is too long.
+
+
+
+
+Design theory:
+
+                                   |
+                              /   /   \    \
+                            /   /      \     \
+                         
+
+
+
+          /|\        /|\       /|\        /|\          /|\
+
+
+
+simple gates at the top, many-many-lined functions all the way at the bottom.
+
+
+
+
+Alternative design theory:     short tree.
+
+
+(combinatorics of each)
+
+
+
+
+
+suckless | golang.   spend more time closer to the doing   (short tree)
+
+
+
+
+If you don't know the source of GHC | r-base | perl6 itself ......  you are going via experience, familiarity, and naturalnesss     (Which is different for experienced programmers, who shun "monads" because they haven't heard of it ---- and newbies, who don't know assignment "just obviously is" to the left.)
